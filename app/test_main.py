@@ -31,7 +31,7 @@ def test_function_human_age(
     [
         pytest.param(0, "string", id="string"),
         pytest.param([0], 0, id="list"),
-        pytest.param(0, {0}, id="dict")
+        pytest.param(0, (0, 1), id="set")
     ]
 )
 def test_human_age_errors(
